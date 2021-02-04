@@ -5,3 +5,8 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+TvShow.create(name: "Scrubs")
+TvShow.create(name: "30 Rock")
+TvShow.create(name: "Superstore")
+TvShow.create(name: "Spider-man")
