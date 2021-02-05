@@ -13,6 +13,7 @@ class TvShowsController < ApplicationController
         if @tv_show.save
             redirect_to tv_shows_path
         else  
+            flash.now[:error] = @tv_show.errors.full_messages
             render :new
         end
     end
