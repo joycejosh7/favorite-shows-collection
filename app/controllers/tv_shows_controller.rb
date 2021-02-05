@@ -8,7 +8,13 @@ class TvShowsController < ApplicationController
     end
 
     def create
+        @tv_show = TvShow.new(tv_show_params)
 
+        if @tv_show.save
+            redirect_to tv_shows_path
+        else  
+            render :new
+        end
     end
 
     private
