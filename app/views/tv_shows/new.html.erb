@@ -1,3 +1,13 @@
 <%= render 'layouts/wrapper' do %>
-    <h3 class="center">Add Tv Show</h3>
+    <h3 class="center blue-text text-darken-4">Add Tv Show</h3>
+    <div class="container">
+        <%= form_for @tv_show do |f| %>
+            <div class="input-field">
+                <%= f.label :name %>
+                <%= f.text_field :name %>
+            </div>
+
+            <%= f.submit "Add Tv Show", class: "btn blue darken-4" %>
+        <% end %>
+    </div>
 <% end %>
